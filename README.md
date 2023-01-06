@@ -1,4 +1,18 @@
 # TwinDB data recovery toolkit
+
+<hr>
+
+## About this fork
+
+I've added support for running this tool in a Docker container with ease.
+
+Setup guide:
+1) Build the image using `docker build -t undrop-for-innodb .`
+2) Run the image in interactive mode: `docker run --name undropforinnodb -it -v "$(pwd)/data:/main/run" undrop-for-innodb`
+
+<hr>
+
+
 ## Supported Failures
 
 TwinDB Data Recovery Toolkit is a set of tools that operate with MySQL files at low level and allow to recover InnoDB databases after different failure scenarios.
